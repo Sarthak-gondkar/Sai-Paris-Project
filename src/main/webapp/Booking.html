@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="SaveInfo.jsp" method="post">
+            <h2>Hotel Registration</h2>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="checkinDate">Check-in Date:</label>
+            <input type="date" id="checkinDate" name="checkinDate" required>
+            
+             <label for="checkoutDate">Check-out Date:</label>
+            <input type="date" id="checkoutDate" name="checkoutDate" required>
+
+            <label for="Number of person:">Number of person:</label>
+            <input type="number" id="numberofperson" name="numberofperson" min="0" required>
+           
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+</style>
